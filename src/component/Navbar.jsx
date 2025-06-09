@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { logout } from '../api/apiClient';
+import drafttool from "../assets/drafttool.png"
 
 function Navbar({loggedIn, setLoggedIn, teamsSelected}) {
     const navigate = useNavigate();
@@ -35,7 +36,7 @@ function Navbar({loggedIn, setLoggedIn, teamsSelected}) {
 
                 <div className="flex h-full">
                     <Link to="/" className="w-fit h-full" onClick={handleTeamsSelected}>
-                        <img src="src/assets/drafttool.png" className="h-8"  alt="Logo"/>
+                        <img src={drafttool} className="h-8"  alt="Logo"/>
                     </Link>
                 </div>
 
