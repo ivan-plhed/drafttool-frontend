@@ -35,7 +35,7 @@ function Navbar({loggedIn, setLoggedIn, teamsSelected}) {
 
                 <div className="flex h-full">
                     <Link to="/" className="w-fit h-full" onClick={handleTeamsSelected}>
-                        <img src="src/drafttool.png" className="h-8"  alt="Logo"/>
+                        <img src="src/assets/drafttool.png" className="h-8"  alt="Logo"/>
                     </Link>
                 </div>
 
