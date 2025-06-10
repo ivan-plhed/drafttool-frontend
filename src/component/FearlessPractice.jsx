@@ -148,7 +148,6 @@ function FearlessPractice({leftTeam, rightTeam}) {
         setGames(updatedGames);
         setSearchTerm('');
         setActiveType(null);
-        setPastBans(pastBans.slice(0, 10 * currentGameIndex));
     }
 
     return (
