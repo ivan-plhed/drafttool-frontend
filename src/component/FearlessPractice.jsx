@@ -88,6 +88,7 @@ function FearlessPractice({leftTeam, rightTeam}) {
         const nextIndex = currentGameIndex + 1;
 
         setPastBans([
+            ...pastBans,
             ...currentGame.leftChampions,
             ...currentGame.rightChampions,
         ]);
