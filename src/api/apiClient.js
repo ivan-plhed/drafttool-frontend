@@ -142,7 +142,7 @@ export const logout = () => {
     window.dispatchEvent(new CustomEvent('authStatusChanged', {
         detail: { username: null }
     }));
-    window.location.href = '/login';
+    window.location.href = '/';
 };
 
 export default apiClient;
