@@ -190,6 +190,7 @@ function RegisterNewTeam() {
 
         try {
             const response = await apiClient.post('/teams', teamData);
+            navigate('/');
         } catch (error) {
             console.error('Error registering team:', error);
             setSubmitError('Failed to register team. Please try again.');
